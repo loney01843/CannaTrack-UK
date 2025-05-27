@@ -14,5 +14,5 @@ env:
       - BUILD
       - RUNTIME
 
-  - variable: GemAPI_KEY
-    secret: projects/19586254971/secrets/GemAPI
+  - variable: API_KEY
+    secret: GemAPI
