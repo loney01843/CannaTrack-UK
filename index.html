@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CannaTrack UK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: '#059669',     // Emerald-600 (Green)
+            secondary: '#3b82f6',   // Blue-500
+            accent: '#14b8a6',      // Teal-500
+            dark: '#1f2937',        // Gray-800 (used for text in light mode, component bg in dark)
+            light: '#f3f4f6',       // Gray-100 (used for component bg in light mode, text in dark)
+            neutral: '#4b5563',     // Gray-600
+            'page-bg-light': '#f3f4f6', // Explicit light mode page background
+            'page-bg-dark': '#111827',  // Explicit dark mode page background (Gray-900)
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-page-bg-light dark:bg-page-bg-dark">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
